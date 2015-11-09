@@ -19,20 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lge/d855/d855-vendor.mk)
 
-<<<<<<< HEAD
 #ifeq ($(TARGET_PREBUILT_KERNEL),)
 #LOCAL_KERNEL := device/lge/d855/zImage-dtb
 #endif
 #PRODUCT_COPY_FILES := \
 #    $(LOCAL_KERNEL):kernel
-=======
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lge/d855/zImage-dtb
-endif
-
-PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel
->>>>>>> 8df56771926a9d124124fbe49c6ad3e4ebd6c1e9
 
 # Audio
 PRODUCT_COPY_FILES += \
